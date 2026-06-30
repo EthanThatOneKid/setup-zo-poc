@@ -13,6 +13,8 @@ agent:
   priorStateKey: zo-gh:EthanThatOneKid/setup-zo-poc
 space:
   url: https://etok.zo.space
+mirror:
+  workspacePath: /home/workspace/code/github.com/EthanThatOneKid/setup-zo-poc-mirror
 feedback:
   commitComment:
     enabled: false
