@@ -1,0 +1,18 @@
+version: "1"
+branch: main
+fallbackBranches: []
+sync:
+  enabled: true
+  packPaths:
+    - packs/*.zopack.md
+  onEvents: push, workflow_dispatch
+events:
+  push: sync
+  workflow_dispatch: sync
+agent:
+  priorStateKey: zo-gh:EthanThatOneKid/setup-zo-poc
+space:
+  url: https://etok.zo.space
+feedback:
+  commitComment:
+    enabled: false
